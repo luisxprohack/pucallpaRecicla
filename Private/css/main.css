@@ -35,7 +35,7 @@ body, html {
 /*---------------------------------------------*/
 a {
 	font-family: Ubuntu-Regular;
-  transform: scale(10%);
+  
 	font-size: 20px;
 	line-height: 1.7;
 	color: #666666;
@@ -53,7 +53,8 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #fff;
+  color: #05FC18;
+
 }
 
 /*---------------------------------------------*/
@@ -366,11 +367,11 @@ iframe {
   height: 42px;
   border-radius: 21px;
 
-  background: #d41872;
-  background: -webkit-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -o-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: -moz-linear-gradient(left, #a445b2, #d41872, #fa4299);
-  background: linear-gradient(left, #a445b2, #d41872, #fa4299);
+  background: #04F700;
+  background: -webkit-linear-gradient(left #04F700);
+  background: -o-linear-gradient(left #04F700);
+  background: -moz-linear-gradient(left #04F700);
+  background: linear-gradient(left #04F700);
   position: relative;
   z-index: 1;
 
@@ -388,7 +389,7 @@ iframe {
   width: 100%;
   height: 100%;
   border-radius: 21px;
-  background-color: #555555;
+  background-color: #04F908;
   top: 0;
   left: 0;
   opacity: 0;
