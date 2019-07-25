@@ -47,8 +47,9 @@
                                 </div>
             
                                 <div class="container-login100-form-btn m-t-32">
-                                    <button class="login100-form-btn">
-                                        Acceder </button>
+                                   <!-- <button class="login100-form-btn">
+                                        Acceder </button>-->
+                                        <a href="plataformaUser.php">Acceder</a>
                                 </div>
                                 <div class="container-login100-form-btn m-t-32">
 
