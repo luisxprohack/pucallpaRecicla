@@ -58,6 +58,6 @@ dsdfds
 
 	}//cierre de llave conectar 		
 	public function aeamano(){
-		
+		$calla_tarado;
 	}	  	
 ?>
