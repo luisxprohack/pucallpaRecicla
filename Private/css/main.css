@@ -35,7 +35,8 @@ body, html {
 /*---------------------------------------------*/
 a {
 	font-family: Ubuntu-Regular;
-	font-size: 14px;
+  transform: scale(10%);
+	font-size: 20px;
 	line-height: 1.7;
 	color: #666666;
 	margin: 0px;
@@ -43,6 +44,7 @@ a {
 	-webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
+  transform: scale(10%);
 }
 
 a:focus {
@@ -233,14 +235,14 @@ iframe {
 .wrap-input100 {
   width: 100%;
   position: relative;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #3CFC08;
   padding: 29px 0;
 }
 
 .input100 {
   font-family: Ubuntu-Regular;
   font-size: 20px;
-  color: #555555;
+  color: #0980F7;
   line-height: 1.2;
 
   display: block;
@@ -306,7 +308,7 @@ iframe {
 }
 
 .input100:focus {
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .input100:focus + .focus-input100::after {
@@ -421,7 +423,7 @@ iframe {
   background-color: #fff;
   border: 1px solid #c80000;
   border-radius: 2px;
-  padding: 4px 25px 4px 10px;
+  padding: 6px 25px 6px 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
