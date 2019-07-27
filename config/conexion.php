@@ -25,7 +25,7 @@
  			
  		}
  
-dsdfds
+
 
 		 } //cierre de llave de la function conexion()
 
