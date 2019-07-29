@@ -47,12 +47,11 @@
                                 </div>
             
                                 <div class="container-login100-form-btn m-t-32">
-                                  <button class="login100-form-btn" <a href="plataformaUser.php"></a>
-
+                                   <button class="login100-form-btn">
                                         Acceder </button>
-                                </div>       
-                           
-                                 <div class="container-login100-form-btn m-t-32">
+                                        <a href="plataformaUser.php"></a></button>
+                                </div>
+                                <div class="container-login100-form-btn m-t-32">
 
                                     <a href="registroUsuario.php">Registrarse</a>
                                     </div>                                

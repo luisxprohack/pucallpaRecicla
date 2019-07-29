@@ -138,6 +138,11 @@
                                     <button class="login100-form-btn">
                                         Registrarse</button>
                                 </div>
+                                <div class="container-login100-form-btn m-t-32">
+                                 
+                                        <a href="login.php"> Iniciar Sesión </a>
+                                </div>
+
                                 <!--<div class="container-login100-form-btn m-t-32">
 
                                     <a href="registroUsuario.php">Registrarse</a>
