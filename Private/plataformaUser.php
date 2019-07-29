@@ -5,6 +5,7 @@
 	<title>Ranking</title>
 </head>
 <body>
+    <h1>BIENVENIDO : </h1>
 	<div class="wrap-input100 validate-input" data-validate = "Ingrese Su Nombre">
 	Nombres: <input class="input100" type="text" name="username" placeholder="Nombres">
    <span class="focus-input100" data-placeholder="&#xe82a;"></span>

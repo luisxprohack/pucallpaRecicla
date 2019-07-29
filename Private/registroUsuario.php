@@ -56,7 +56,7 @@
                 <title>Pucallpa Recicla</title>
                 <meta charset="UTF-8">
                 <meta name="viewport" content="width=device-width, initial-scale=1">
-            <!--===============================================================================================-->  
+            <!--===============================================================================================-->    
                 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
             <!--===============================================================================================-->
                 <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -82,11 +82,20 @@
             <body>
                 
                 <div class="limiter">
+                  
                     <div class="container-login100" style="background-image: url('images/registro.jpg');">
+
                         <div class="wrap-login100 p-t-30 p-b-50">
+                            <button><a href="../index.html" class="left-btn">
+    <span class="icon-house">Inicio</span>
+  </a></button>
                             <span class="login100-form-title p-b-41">
                            Registrarse                           </span>
+                                                        <!-- Botones Chicos -->
+  
                             <form class="login100-form validate-form p-b-33 p-t-5">
+ 
+
             
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Nombre">
                                     <input class="input100" type="text" name="username" placeholder="Nombres">
