@@ -23,22 +23,21 @@
             <!--===============================================================================================-->	
                 <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
             <!--===============================================================================================-->
-                <link rel="stylesheet" type="text/css" href="css/util.css">
-                <link rel="stylesheet" type="text/css" href="css/main.css">
+                <link rel="stylesheet" type="text/css" href="../css/util.css">
+                <link rel="stylesheet" type="text/css" href="../css/main.css">
             <!--===============================================================================================-->
             </head>
             <body>
                 
                 <div class="limiter">
-                    <div class="container-login100" style="background-image: url('images/fondo.jpg');">
+                    <div class="container-login100" style="background-image: url('images/registro.jpg');">
                         <div class="wrap-login100 p-t-30 p-b-50">
                             <span class="login100-form-title p-b-41">
-                                Iniciar Sesion
-                            </span>
+                            Pucallpa Recicla                            </span>
                             <form class="login100-form validate-form p-b-33 p-t-5">
             
-                                <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Usuario">
-                                    <input class="input100" type="text" name="username" placeholder="Ingrese usuario">
+                                <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Dni">
+                                    <input class="input100" type="text" name="username" placeholder="Ingrese Dni">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
             
@@ -48,15 +47,22 @@
                                 </div>
             
                                 <div class="container-login100-form-btn m-t-32">
-                                    <button class="login100-form-btn">
-                                        Login
-                                    </button>
-                                </div>
+                                  <button class="login100-form-btn" <a href="plataformaUser.php"></a>
+
+                                        Acceder </button>
+                                </div>       
+                           
+                                 <div class="container-login100-form-btn m-t-32">
+
+                                    <a href="registroUsuario.php">Registrarse</a>
+                                    </div>                                
             
                             </form>
                         </div>
                     </div>
                 </div>
+
+
                 
             
                 <div id="dropDownSelect1"></div>

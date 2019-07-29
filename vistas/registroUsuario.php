@@ -1,54 +1,4 @@
-<!--<!DOCTYPE html>
-<html lang="es">
-<head>
-	<title>Registrar usuario</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
-	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-</head>
-
-
-<div class="testbox">
-  <h1>Registration</h1>
-
-  <form action="/">
-      <hr>
-  <hr>
-  
-
-  <label id="icon" for="name"><i class="icon-user"></i></label>
-  <input type="text" name="name" id="name" placeholder="Name" required/>
-
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="Apellido" required/>
-
-  <label id="icon" for="name"><i class="icon-shield"></i></label>
-  <input type="text" name="name" id="name" placeholder="E-Mail" required/>
-
-  <label id="icon" for="name"><i class="icon-shield"></i></label>
-  <input type="text" name="name" id="name" placeholder="Celular" required/>
-
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="DNI" required/>
-
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="Password" name="name" id="name" placeholder="Password" required/>
-
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="Distrito" required/>
-
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="Dirección" required/>
-
-  <label id="icon" for="name"><i class="icon-envelope "></i></label>
-  <input type="text" name="name" id="name" placeholder="Referencia" required/>
-
-
-   <a href="#" class="button">Register</a>
-  </form>
-</div>
-</html>-->
 
 <!DOCTYPE html>
 <html lang="es">
@@ -75,8 +25,8 @@
             <!--===============================================================================================-->  
                 <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
             <!--===============================================================================================-->
-                <link rel="stylesheet" type="text/css" href="css/util.css">
-                <link rel="stylesheet" type="text/css" href="css/main.css">
+                <link rel="stylesheet" type="text/css" href="../css/util.css">
+                <link rel="stylesheet" type="text/css" href="../css/main.css">
             <!--===============================================================================================-->
             </head>
             <body>
@@ -86,57 +36,58 @@
                         <div class="wrap-login100 p-t-30 p-b-50">
                             <span class="login100-form-title p-b-41">
                            Registrarse                           </span>
-                            <form class="login100-form validate-form p-b-33 p-t-5">
+                            <form class="login100-form validate-form p-b-33 p-t-5" method="post" id="usuario_form">
             
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Nombre">
-                                    <input class="input100" type="text" name="username" placeholder="Nombres">
+                                    <input class="input100" type="text" name="nombre" id="nombre" placeholder="Nombres">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Apellido">
-                                    <input class="input100" type="text" name="username" placeholder="Apellido">
+                                    <input class="input100" type="text" name="apellido" id="apellido" placeholder="Apellido">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "E-Mail">
-                                    <input class="input100" type="text" name="username" placeholder="E-mail">
+                                    <input class="input100" type="text" name="correo" id="correo" placeholder="E-mail">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
             
                                 <div class="wrap-input100 validate-input" data-validate="Ingrese Su Celular">
-                                    <input class="input100" type="text" name="pass" placeholder="Celular">
+                                    <input class="input100" type="text" name="celular" id="celular" placeholder="Celular">
                                     <span class="focus-input100" data-placeholder="&#xe80f;"></span>
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Dni">
-                                    <input class="input100" type="text" name="username" placeholder="Dni">
+                                    <input class="input100" type="text" name="dni" id="dni" placeholder="Dni">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
 
                                  <div class="wrap-input100 validate-input" data-validate="Ingrese Su Contraseña">
-                                    <input class="input100" type="password" name="pass" placeholder="Contraseña">
+                                    <input class="input100" type="password" name="password" id="password" placeholder="Contraseña">
                                     <span class="focus-input100" data-placeholder="&#xe80f;"></span>
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Distrito">
-                                    <input class="input100" type="text" name="username" placeholder="Distrito">
+                                    <input class="input100" type="text" name="distrito" id="distrito" placeholder="Distrito">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Direccion">
-                                    <input class="input100" type="text" name="username" placeholder="Direccion">
+                                    <input class="input100" type="text" name="direccion" id="direccion" placeholder="Direccion">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese una Referencia">
-                                    <input class="input100" type="text" name="username" placeholder="Referencia">
+                                    <input class="input100" type="text" name="referencia" id="referencia" placeholder="Referencia">
                                     <span class="focus-input100" data-placeholder="&#xe82a;"></span>
                                 </div>
             
 
                                 <div class="container-login100-form-btn m-t-32">
                                     <button class="login100-form-btn">
-                                        Registrarse</button>
+                                      Registrarse
+                                    </button>
                                 </div>
                                 <!--<div class="container-login100-form-btn m-t-32">
 

@@ -21,7 +21,7 @@
              $resultado= $sql->fetchAll(PDO::FETCH_ASSOC);
 
              return $sql->rowCount();
-        dasdadasd
+        
         }
 
         public function login(){
@@ -87,7 +87,7 @@
             }//condicion enviar
         }
 
-        public function registrar_usuario($nombre,$apellido,$email,$celular,$dni,$contraseña,$distrito,$direccion,$ref_direccion){
+        public function registrar_usuario($nombre,$apellido,$email,$celular,$dni,$contraseña,$distrito,$direccion,$referencia){
 
              $conectar=parent::conexion();
              parent::set_names();
@@ -105,11 +105,29 @@
              $sql->bindValue(6, $_POST["contraseña"]);
              $sql->bindValue(7, $_POST["distrito"]);
              $sql->bindValue(8, $_POST["direccion"]);
-             $sql->bindValue(9, $_POST["ref_direccion"]);
+             $sql->bindValue(9, $_POST["referencia"]);
              $sql->execute();
              
               //obtenemos el valor del id del usuario
                $id_usuario = $conectar->lastInsertId();     
+
+        }
+
+
+
+        public function get_dni_del_usuario($dni){
+          
+          $conectar=parent::conexion();
+          parent::set_names();
+
+          $sql="select * from usuarios where dni=? ";
+
+          $sql=$conectar->prepare($sql);
+
+          $sql->bindValue(1, $dni);
+          $sql->execute();
+
+          return $resultado=$sql->fetchAll();
 
         }
 
