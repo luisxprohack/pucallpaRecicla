@@ -1,10 +1,11 @@
 
-(function ($) {
+/*(function ($) {
     "use strict";
 
 
     /*==================================================================
     [ Focus input ]*/
+    /*
     $('.input100').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -19,6 +20,7 @@
   
     /*==================================================================
     [ Validate ]*/
+    /*
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
@@ -34,7 +36,7 @@
         return check;
     });
 
-
+/*
     $('.validate-form .input100').each(function(){
         $(this).focus(function(){
            hideValidate(this);
@@ -68,6 +70,7 @@
     
     /*==================================================================
     [ Show pass ]*/
+    /*
     var showPass = 0;
     $('.btn-show-pass').on('click', function(){
         if(showPass == 0) {
@@ -83,5 +86,5 @@
         
     });
 
-
+/*
 })(jQuery);

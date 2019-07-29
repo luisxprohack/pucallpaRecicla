@@ -57,7 +57,5 @@
 	
 
 	}//cierre de llave conectar 		
-	public function aeamano(){
-		
-	}	  	
+		  	
 ?>
