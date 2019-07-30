@@ -3,7 +3,7 @@
 $servidor="localhost";
 $usuario="root";
 $clave="";
-$baseDatos="reciclaje";
+$baseDatos="pucrecicla";
 
 $conexion=new mysqli($servidor,$usuario,$clave,$baseDatos);
 //Tipo de error de conexión
