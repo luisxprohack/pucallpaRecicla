@@ -86,12 +86,8 @@
                     <div class="container-login100" style="background-image: url('images/registro.jpg');">
 
                         <div class="wrap-login100 p-t-30 p-b-50">
-                            <button><a href="../index.html" class="left-btn">
-    <span class="icon-house">Inicio</span>
-  </a></button>
-                            <span class="login100-form-title p-b-41">
-                           Registrarse                           </span>
-                                                        <!-- Botones Chicos -->
+                            <a href="../index.html"><span class="login100-form-title p-b-41">
+                            Pucallpa Recicla </span></a>
   
                             <form class="login100-form validate-form p-b-33 p-t-5">
  
