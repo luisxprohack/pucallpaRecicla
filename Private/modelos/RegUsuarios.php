@@ -28,5 +28,18 @@ echo "$sql";
     $help=2;
   }
                
+$ruta="";
+
+
+switch ($help) {
+  case 1:
+      $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=1";
+    break;
+  
+  case 2:
+    $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=1";
+    break;
+}
+
               
 ?>

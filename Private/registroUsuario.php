@@ -27,7 +27,7 @@ include_once 'header.php';
 
                                 <div class="wrap-input100 validate-input" data-validate = "E-Mail">
                                     <input class="input100" type="text" name="correo" id="correo" placeholder="E-mail">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                    <span class="focus-input100" data-placeholder="&#xE715;"  FontFamily="Segoe MDL2 Assets"></span>
                                 </div>
             
                                 <div class="wrap-input100 validate-input" data-validate="Ingrese Su Celular">
