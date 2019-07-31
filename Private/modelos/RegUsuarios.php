@@ -33,13 +33,14 @@ $ruta="";
 
 switch ($help) {
   case 1:
-      $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=1";
+      $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=ok";
     break;
   
   case 2:
-    $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=1";
+    $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=2";
     break;
 }
 
+header($ruta);
               
 ?>
