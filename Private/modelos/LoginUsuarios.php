@@ -26,8 +26,10 @@ while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
 				//iniciar sesion valida
 				
 				session_start();
-				$_SESSION['usuarioValido']=$fila;
-				 //guardar todo el registro correcto
+				$_SESSION['usuarioValido']=true;
+				$_SESSION['Unombres']=$fila['nombres'];
+				$_SESSION['Uapellidos']=$fila['apellidos'];
+				$_SESSION['Upuntaje']=$fila['puntaje']; //guardar todo el registro correcto
 				break;
 
 			}else{

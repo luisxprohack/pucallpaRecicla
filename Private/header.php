@@ -1,15 +1,3 @@
-<?php
-
-session_start();
-if(isset($_SESSION['usuarioValido'])){
-
-$nombreCompleto=$_SESSION['usuarioValido']['nombres'];
-//$apellidoCompleto=$_SESSION['usuarioValido']['apellidos']:
-}else{
-header("Location: error.php");
-}
-
-?>
 <!DOCTYPE html>
 <html lang="es">
         <head>

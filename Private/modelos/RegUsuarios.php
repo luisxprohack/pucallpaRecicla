@@ -14,8 +14,9 @@ $password=$_POST['password'];
 $distrito=$_POST['distrito'];
 $direccion=$_POST['direccion'];
 $referencia=$_POST['referencia'];
+$puntaje=000;
 
-$sql="INSERT INTO usuarios (nombres,apellidos,email,celular,dni,password,distrito,direccion,referencia) VALUE ('$nombres','$apellidos','$correo','$celular','$dni','$password','$distrito','$direccion','$referencia')";
+$sql="INSERT INTO usuarios (nombres,apellidos,email,celular,dni,password,distrito,direccion,referencia,puntaje) VALUE ('$nombres','$apellidos','$correo','$celular','$dni','$password','$distrito','$direccion','$referencia','$puntaje')";
 
 
 $resultado=$conexion->query($sql);

@@ -90,6 +90,7 @@
 	margin-right: 35px;
 	margin-left: 65px;
 	margin-top: 20px;
+
 }
 
 .datosU{
@@ -99,4 +100,8 @@
 	border-radius: 10px;
 	background-color: white;
 	margin-top: 30px;
+}
+
+.hrU{
+	border: 2px solid black;
 }
