@@ -63,7 +63,7 @@ require_once 'header.php';
                            <?php 
 
                         require_once 'config/conexion.php';
-                        $sql="SELECT * FROM usuarios";
+                        $sql="SELECT * FROM usuarios ORDER BY puntaje DESC";
                         $resultado=$conexion->query($sql);
 
                         echo "<p>Número de Concursantes : ".$resultado->num_rows."</p>";
