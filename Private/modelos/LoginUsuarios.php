@@ -26,7 +26,13 @@ while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
 				//iniciar sesion valida
 				
 				session_start();
-				$_SESSION['usuarioValido']=$fila; //guardar todo el registro correcto
+				$_SESSION['usuarioValido']=true;
+				$_SESSION['Unombres']=$fila['nombres'];
+				$_SESSION['Uapellidos']=$fila['apellidos'];
+				$_SESSION['Upuntaje']=$fila['puntaje'];
+				$_SESSION['start']=time();
+				$_SESSION['expire']=$_SESSION['start']+(5*60);
+				 //guardar todo el registro correcto
 				break;
 
 			}else{
@@ -41,3 +47,25 @@ while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
 	}
 	
 }
+
+
+$ruta="";
+
+switch ($bandera) {
+	case 1://todo correcto
+		$ruta="Location: http://localhost/pucallpaRecicla/Private/plataformaUser.php";
+		break;
+	
+	case 2://error en la clave
+		$ruta="Location: http://localhost/pucallpaRecicla/Private/login.php?v=2";
+		break;
+
+	case 3://error en el usuario
+		$ruta="Location: http://localhost/pucallpaRecicla/Private/login.php?v=3";
+		break;
+}
+
+header($ruta);
+
+
+?>
