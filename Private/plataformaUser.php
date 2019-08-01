@@ -43,8 +43,7 @@ require_once 'header.php';
                     </div>
                     <div class="datosU">
                         <p>Puntaje:</p>
-                        <p><?php  echo $_SESSION['Upuntaje']?>         
-                        </p>
+                        <p><?php  echo $_SESSION['Upuntaje']?></p>
                     </div>
                     <div class="datosU">
                         <p>Opciones:</p>
@@ -52,39 +51,38 @@ require_once 'header.php';
                         <button type="submit" class="btnUEdit"> Editar</button>
                     </div>
                     <div class="imgU">
-                      <img src="imagen/logotipo.jpeg" width="80%">
+                      <img class="imgK" src="imagen/logotipo.jpeg" >
                     </div>
 
                 </div>
                 <div class="rankingU">
-                    <h2 class="h2U">RANKING DE USUARIOS</h2> 
+                    <h2 class="h2U">RANKING</h2> 
                     <hr class="hrU">
                         <div class="tableMax">
-                           <?php 
+                            <?php 
 
-                        require_once 'config/conexion.php';
-                        $sql="SELECT * FROM usuarios ORDER BY puntaje DESC";
-                        $resultado=$conexion->query($sql);
+                              require_once 'config/conexion.php';
+                              $sql="SELECT * FROM usuarios ORDER BY puntaje DESC";
+                              $resultado=$conexion->query($sql);
 
-                        echo "<p>Número de Concursantes : ".$resultado->num_rows."</p>";
+                              //echo "<p>Número de Concursantes : ".$resultado->num_rows."</p>";
 
-                                  echo "<table class='tableU'>";
-                                  echo "<tr>";
-                                    echo "<th>Nombre</th>";
-                                    echo "<th>Apellidos</th>";
-                                    echo "<th>Puntaje</th>";                                   
-                                  echo "</tr>";
-                                    while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
-                                    echo "<tr>";
-                                    echo "<td>".$fila['nombres']."</td>";
-                                    echo "<td>".$fila['apellidos']."</td>";
-                                    echo "<td>".$fila['puntaje']."</td>";
-                                    echo "</tr>";
-                                    }
-                                  echo "</table>"
-                            ?>  
+                                        echo "<table class='tableU'>";
+                                        echo "<tr>";
+                                          echo "<th>Nombre</th>";
+                                          echo "<th>Apellidos</th>";
+                                          echo "<th>Puntaje</th>";                                   
+                                        echo "</tr>";
+                                          while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
+                                          echo "<tr>";
+                                          echo "<td>".$fila['nombres']."</td>";
+                                          echo "<td>".$fila['apellidos']."</td>";
+                                          echo "<td>".$fila['puntaje']."</td>";
+                                          echo "</tr>";
+                                          }
+                                        echo "</table>"
+                              ?>
                         </div>
-                    
                 </div>
             </div>                
         </div>

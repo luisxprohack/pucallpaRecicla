@@ -43,7 +43,7 @@
 }
 
 .index{
-	width: 1000px;
+	width: 950px;
     overflow: hidden;
     background: transparent;
 }
@@ -60,7 +60,7 @@
 
 .user{
 	
-	height: 700px;
+	height: 800px;
 
 	border-radius: 30px;
 	margin-top: 5px; 
@@ -69,52 +69,73 @@
 
 .infoU{
 	float: left;
-	height: 600px;
-	width: 450px;
+	height: auto;
+	max-height: 800px;
+	max-width:450px;
+	width: auto;
 	background-color: #1D6511;
-	margin-left: 30px;
 	margin-top: 50px;
+	margin-right: 10px;
 	border-radius: 15px;
+	display:inline-block;
 }
 .rankingU{
-	height: 600px;
-	width: 450px;
+	height: auto;
+	max-height: 800px;
+	max-width:450px;
+	width: auto;
 	background-color: #1D6511;
 	float:right;
-	margin-right: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
 	margin-top: 50px;
 	border-radius: 15px;
+	display:inline-block;
 }
 
 .h2U{
-	margin-right: 35px;
-	margin-left: 65px;
+
+	margin-left: 40px;
 	margin-top: 20px;
 	color: white;
+	font-size: auto;
+	justify-content: center;
 
 }
 
 .datosU{
-	height: 60px;
-	width: 350px;
+	height: 65px;
+	max-width:350px;
+	width: auto;
 	margin-left: 50px;
+	margin-right: 50px;
 	border-radius: 10px;
 	background-color: white;
 	margin-top: 30px;
+
 }
 
 .imgU{
-	height: 100px;
-	width: 350px;
+	max-height:120px;
+	max-width: 350px;
 	margin-left: 50px;
+	margin-right:50px;
 	border-radius: 10px;
 	margin-top: 30px;
 	text-align: center;
+	justify-content: center;
+	margin-bottom:10px;
 }
 
-.imgU img{
-	border-radius: 10px;
+.imgK{
+    width: auto;
+    max-height:100px;
+    max-width: 350px;
+    justify-content: center;
+    border-radius:15px;
+    margin-bottom:10px;
 }
+
 
 
 
@@ -144,15 +165,13 @@
 	color:#34BF1E;
 }
 
-
-
-
 .btnUEdit{
 	width: 100px;
 	height: 30px; 
 	position:relative;
 	display:inline-block;
-	margin-left: 100px;
+	margin-left: 15px;
+	margin-right: 20px;
 	background-color: #34BF1E;
 	border: 2px solid transparent;
 	border-radius: 15px;
@@ -167,34 +186,49 @@
 	border: 2px solid #34BF1E;
 	color:#34BF1E;
 }
+.btnUEdit:before{
+	margin-left:auto;
+}
+
 
 p{
 	margin-left: 20px;
 	font-family: 'arial';
-	font-size: 15px;
+	font-size: auto;
 	color: black;
 }
 
 
 .tableMax{
-	width: 400px;
-	height: 470px;
+	max-width: 400px;
+	max-height: 500px;
 	background-color: white;
 	border-radius: 20px;
 	margin-left: 30px;
+	margin-right: 20px;
+	margin-bottom:17px;
+	overflow:scroll
 }
 
 .tableU{
 	
-	width: 350px;
-	text-align:center;
-	margin: 0 auto;
+	width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-radius: 20px;
 }
 
 .tableU th, .tableU td{
-	vertical-align: top;
-	text-align:center;
-	border:1.5px solid black;
-	margin-left: 30px;
+	padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
 }
 
+.tableU thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.tableU tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
