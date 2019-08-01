@@ -17,12 +17,12 @@ require_once 'header.php';
             
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Dni">
                                     <input class="input100" type="text" name="dni" placeholder="Ingrese Dni">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
             
                                 <div class="wrap-input100 validate-input" data-validate="Ingrese Su Contraseña">
                                     <input class="input100" type="password" name="password" placeholder="Contraseña">
-                                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe80f;"></span>-->
                                 </div>
             
                                 <div class="container-login100-form-btn m-t-32">

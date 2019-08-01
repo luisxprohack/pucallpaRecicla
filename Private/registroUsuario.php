@@ -17,47 +17,47 @@ include_once 'header.php';
             
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Nombre">
                                     <input class="input100" type="text" name="nombres" id="nombres" placeholder="Nombres">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Apellido">
                                     <input class="input100" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span> -->
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "E-Mail">
                                     <input class="input100" type="text" name="correo" id="correo" placeholder="E-mail">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
             
                                 <div class="wrap-input100 validate-input" data-validate="Ingrese Su Celular">
                                     <input class="input100" type="text" name="celular" id="celular" placeholder="Celular">
-                                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe80f;"></span>-->
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Dni">
                                     <input class="input100" type="text" name="dni" id="dni" placeholder="Dni">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
 
                                  <div class="wrap-input100 validate-input" data-validate="Ingrese Su Contraseña">
                                     <input class="input100" type="password" name="password" id="password" placeholder="Contraseña">
-                                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe80f;"></span-->
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Distrito">
                                     <input class="input100" type="text" name="distrito" id="distrito" placeholder="Distrito">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese Su Direccion">
                                     <input class="input100" type="text" name="direccion" id="direccion" placeholder="Direccion">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
 
                                 <div class="wrap-input100 validate-input" data-validate = "Ingrese una Referencia">
                                     <input class="input100" type="text" name="referencia" id="referencia" placeholder="Referencia">
-                                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                                   <!-- <span class="focus-input100" data-placeholder="&#xe82a;"></span>-->
                                 </div>
             
 
