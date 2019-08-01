@@ -31,7 +31,7 @@ while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
 				$_SESSION['Uapellidos']=$fila['apellidos'];
 				$_SESSION['Upuntaje']=$fila['puntaje'];
 				$_SESSION['start']=time();
-				$_SESSION['expire']=$_SESSION['start']+(1*60);
+				$_SESSION['expire']=$_SESSION['start']+(5*60);
 				 //guardar todo el registro correcto
 				break;
 
