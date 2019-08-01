@@ -7,7 +7,7 @@ if(isset($_SESSION['usuarioValido']) && $_SESSION['usuarioValido']==true){
 //$nombreCompleto=$_SESSION['Unombres']['nombres'];
 //$apellidoCompleto=$_SESSION['Uapellidos']['apellidos']:
 }else{
-header("Location: http://localhost/pucallpaRecicla/login.php");
+header("Location: http://localhost/pucallpaRecicla/private/login.php");
 exit;
 }
 
@@ -15,7 +15,7 @@ $now=time();
 
 if($now>$_SESSION['expire']){
   session_destroy();
-  header("Location: http://localhost/pucallpaRecicla/login.php");
+  header("Location: http://localhost/pucallpaRecicla/private/login.php");
 }
 
 
