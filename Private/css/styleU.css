@@ -61,9 +61,9 @@
 .user{
 	
 	height: 700px;
-	background-color: white;
+
 	border-radius: 30px;
-	margin-top: 40px; 
+	margin-top: 5px; 
 
 }
 
@@ -71,7 +71,7 @@
 	float: left;
 	height: 600px;
 	width: 450px;
-	background-color: #2287F9;
+	background-color: #1D6511;
 	margin-left: 30px;
 	margin-top: 50px;
 	border-radius: 15px;
@@ -79,7 +79,7 @@
 .rankingU{
 	height: 600px;
 	width: 450px;
-	background-color: #2287F9;
+	background-color: #1D6511;
 	float:right;
 	margin-right: 30px;
 	margin-top: 50px;
@@ -90,6 +90,7 @@
 	margin-right: 35px;
 	margin-left: 65px;
 	margin-top: 20px;
+	color: white;
 
 }
 
@@ -105,3 +106,80 @@
 .hrU{
 	border: 2px solid black;
 }
+
+.btnU{
+
+	width: 100px;
+	height: 30px; 
+	position:relative;
+	display:inline-block;
+	margin-left: 20px;
+	background-color: #34BF1E;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	color: #FFF;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+	justify-content: center;
+}
+
+.btnU:hover , .btnU:focus{
+	background-color:#fff;
+	border: 2px solid #34BF1E;
+	color:#34BF1E;
+}
+
+
+
+
+.btnUEdit{
+	width: 100px;
+	height: 30px; 
+	position:relative;
+	display:inline-block;
+	margin-left: 100px;
+	background-color: #34BF1E;
+	border: 2px solid transparent;
+	border-radius: 15px;
+	color: #FFF;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+	justify-content: center;
+}
+
+.btnUEdit:hover , .btnUEdit:focus{
+	background-color:#fff;
+	border: 2px solid #34BF1E;
+	color:#34BF1E;
+}
+
+p{
+	margin-left: 20px;
+	font-family: 'arial';
+	font-size: 15px;
+	color: black;
+}
+
+
+.tableMax{
+	width: 400px;
+	height: 470px;
+	background-color: white;
+	border-radius: 20px;
+	margin-left: 30px;
+}
+
+.tableU{
+	
+	width: 350px;
+	text-align:center;
+	margin: 0 auto;
+}
+
+.tableU th, .tableU td{
+	vertical-align: top;
+	text-align:center;
+	border:1.5px solid black;
+	margin-left: 30px;
+}
+
