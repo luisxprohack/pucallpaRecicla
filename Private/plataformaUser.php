@@ -51,6 +51,10 @@ require_once 'header.php';
                         <button type="submit" class="btnU" href="#" data-toggle="modal" data-target="#logoutModal"> SALIR</button>
                         <button type="submit" class="btnUEdit"> Editar</button>
                     </div>
+                    <div class="imgU">
+                      <img src="imagen/logotipo.jpeg" width="80%">
+                    </div>
+
                 </div>
                 <div class="rankingU">
                     <h2 class="h2U">RANKING DE USUARIOS</h2> 
