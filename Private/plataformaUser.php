@@ -24,7 +24,10 @@ require_once 'header.php';
 
 ?>
 
+
+
 <div class="principalUser" style="background-image: url('images/registro.jpg');">
+
     <div class="boxUser">
         <div class="index">
             <a href="../index.html"><span class="spanU">
@@ -56,7 +59,8 @@ require_once 'header.php';
 
                 </div>
                 <div class="rankingU">
-                    <h2 class="h2U">RANKING</h2> 
+
+                    <h2 class="h2U">Kg de CO2 que dejaste de emitir al ambiente</h2> 
                     <hr class="hrU">
                         <div class="tableMax">
                             <?php 
