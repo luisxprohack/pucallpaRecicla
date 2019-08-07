@@ -1,6 +1,6 @@
 <?php
 
-
+ob_start();
 require_once '../config/conexion.php';
 
 
@@ -34,13 +34,12 @@ $ruta="";
 
 switch ($help) {
   case 1:
-      $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=ok";
+      $ruta="Location:../login.php?v=ok";
     break;  
   case 2:
-    $ruta="Location:http://localhost/pucallpaRecicla/Private/login.php?v=2";
+    $ruta="Location:../login.php?v=2";
     break;
 }
 
-header($ruta);
-              
+header($ruta);             
 ?>

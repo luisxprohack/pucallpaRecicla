@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 
 session_start();
 if(isset($_SESSION['usuarioValido']) && $_SESSION['usuarioValido']==true){
@@ -21,7 +21,6 @@ if($now>$_SESSION['expire']){
 require_once 'header.php';
 
 ?>
-
 <div class="principalUser" style="background-image: url('images/registro.jpg');">
     <div class="boxUser">
         <div class="index">

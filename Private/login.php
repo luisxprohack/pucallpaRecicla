@@ -1,8 +1,8 @@
 <?php
+ob_start();
 require_once 'header.php';
 
 ?>
-                
                 <div class="limiter">
                 
                     <div class="container-login100" style="background-image: url('images/registro.jpg');">
