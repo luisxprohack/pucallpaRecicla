@@ -2,8 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;	
-
 }
 
 
@@ -74,7 +72,6 @@
 	height: auto;
 	max-height: 800px;
 	max-width:450px;
-	margin-left: 10px;
 	width: auto;
 	background-color: #1D6511;
 	margin-top: 50px;
@@ -98,9 +95,8 @@
 
 .h2U{
 
-	margin-left: 40px;
-	margin-top: 20px;
-	margin-right: 40px;
+	margin: 10px;
+	text-align: center;
 	color: white;
 	font-size: auto;
 	justify-content: center;
@@ -116,46 +112,8 @@
 	border-radius: 10px;
 	background-color: white;
 	margin-top: 30px;
-}
 
-.datosU p{
-	width: auto;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
-	font-weight: 400;
-    color: #798696;
-	overflow-x:hidden;
 }
-.inputUe{
-	margin-left: 50px;
-	border-color: black;
-	font-size: 15px;
-	width: auto;
-	font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-
-    -webkit-writing-mode: horizontal-tb !important;
-    text-rendering: auto;
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    -webkit-appearance: textfield;
-    background-color: white;
-    cursor: text;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-    margin-left: 50px;
-    border-radius: 2px;
-}
-
 
 .imgU{
 	max-height:120px;
@@ -221,7 +179,6 @@
 	-webkit-transition:0.3s all;
 	transition:0.3s all;
 	justify-content: center;
-	
 }
 
 .btnUEdit:hover , .btnUEdit:focus{
@@ -239,30 +196,30 @@ p{
 	font-family: 'arial';
 	font-size: auto;
 	color: black;
+	font-weight: bolder;
+	font-weight: 900;
 }
 
 
 .tableMax{
-	max-width: 450px;
+	max-width: 400px;
 	max-height: 500px;
-	width: auto;
 	background-color: white;
+	border-radius: 20px;
 	margin-left: 30px;
 	margin-right: 20px;
 	margin-bottom:17px;
-	overflow:scroll
-
+	overflow:scroll;
+	font-weight: bolder;
+	font-weight: 900;
 }
 
 .tableU{
-	max-width: 450px;
-	width: auto;
-  	margin-bottom: 1rem;
-  	background-color: transparent;
-  	margin-left: 20px;
-  	margin-right: 20px;
-  	margin-top: 20px;
-
+	
+	width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-radius: 20px;
 }
 
 .tableU th, .tableU td{
