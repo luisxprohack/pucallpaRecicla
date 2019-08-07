@@ -91,16 +91,15 @@
 	margin-top: 50px;
 	border-radius: 15px;
 	display:inline-block;
-
 }
 
 .h2U{
 
-	margin: 10px;
+	margin-left: 40px;
+	margin-top: 20px;
 	color: white;
 	font-size: auto;
 	justify-content: center;
-	text-align: center;
 
 }
 
@@ -195,9 +194,8 @@
 p{
 	margin-left: 20px;
 	font-family: 'arial';
+	font-size: auto;
 	color: black;
-	font-weight: bolder;
-	font-weight: 900;
 }
 
 
@@ -210,9 +208,6 @@ p{
 	margin-right: 20px;
 	margin-bottom:17px;
 	overflow:scroll
-	font-weight: bolder;
-	font-weight: 900;
-
 }
 
 .tableU{
