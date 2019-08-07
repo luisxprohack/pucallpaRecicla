@@ -2,6 +2,23 @@
 
 
 session_start();
+require_once 'header.php';
+require_once 'config/conexion.php';
+
+if(isset($_GET['id'])){
+  //algo que buscar
+  $codigo = $_GET['id'];
+
+  $sql="SELECT * FROM usuarios WHERE id_usuarios=".$codigo;
+  $resultado1 = $conexion->query($sql);
+
+  $cola = $resultado1->fetch_array(MYSQLI_ASSOC);
+
+  $nombres1 = $cola['nombres'];
+  $apellidos1 = $cola['apellidos'];
+  $puntaje1 =$cola['puntaje'];
+  }
+
 if(isset($_SESSION['usuarioValido']) && $_SESSION['usuarioValido']==true){
 
 }else{
@@ -16,16 +33,8 @@ if($now>$_SESSION['expire']){
   header("Location: login.php");
 }
 
-
-
-require_once 'header.php';
-
 ?>
-
-
-
 <div class="principalUser" style="background-image: url('images/registro.jpg');">
-
     <div class="boxUser">
         <div class="index">
             <a href="../index.html"><span class="spanU">
@@ -34,23 +43,28 @@ require_once 'header.php';
                 <div class="infoU">
                    <h2 class="h2U">DATOS PERSONALES</h2>
                    <hr class="hrU"> 
+                   <form class="formU" method="post" action="modelos/editU.php">
                     <div class="datosU">
                         <p>Nombres:</p>
-                        <p><?php echo $_SESSION['Unombres']; ?></p>
+                        <p><?php echo $nombres1; ?></p>
                     </div>
                     <div class="datosU">
                         <p>Apellidos:</p>
-                        <p><?php echo  $_SESSION['Uapellidos']; ?></p>
+                        <p><?php echo $apellidos1; ?></p>
+                        <input type="hidden" name="codigo" value="<?php echo $codigo; ?>" />
                     </div>
                     <div class="datosU">
                         <p>Puntaje:</p>
-                        <p><?php  echo $_SESSION['Upuntaje']?></p>
+                        <input type="text" name="puntaje" class="inputUe" value="<?php echo $puntaje1; ?>">
                     </div>
                     <div class="datosU">
                         <p>Opciones:</p>
-                        <button type="submit" class="btnU" href="#" data-toggle="modal" data-target="#logoutModal"> SALIR</button>
-
-                        
+						<button type="edit" class="btnUEdit" href="#"> Editar</button>
+                        </form>                     
+                    </div>
+                    <div class="datosU">
+                        <p>Opciones:</p>
+                        <button type="submit" class="btnU" href="#" data-toggle="modal" data-target="#logoutModal"> SALIR</button>                   
                     </div>
                     <div class="imgU">
                       <img class="imgK" src="imagen/logotipo.jpeg" >
@@ -58,13 +72,12 @@ require_once 'header.php';
 
                 </div>
                 <div class="rankingU">
-
-                    <h2 class="h2U">Kg de CO2 que dejaste de emitir al ambiente</h2> 
+                    <h2 class="h2U">RANKING</h2> 
                     <hr class="hrU">
                         <div class="tableMax">
                             <?php 
 
-                              require_once 'config/conexion.php';
+                             
                               $sql="SELECT * FROM usuarios ORDER BY puntaje DESC";
                               $resultado=$conexion->query($sql);
 
@@ -74,13 +87,15 @@ require_once 'header.php';
                                         echo "<tr>";
                                           echo "<th>Nombre</th>";
                                           echo "<th>Apellidos</th>";
-                                          echo "<th>Puntaje</th>";                                   
+                                          echo "<th>Puntaje</th>";  
+                                          echo "<th>Editar</th>";                                 
                                         echo "</tr>";
                                           while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
                                           echo "<tr>";
                                           echo "<td>".$fila['nombres']."</td>";
                                           echo "<td>".$fila['apellidos']."</td>";
                                           echo "<td>".$fila['puntaje']."</td>";
+                                          echo "<td><a href='plataformaAdmin.php?id=".$fila['id_usuarios']."'><img src='imagen/editar.png' width='20px'></td>";
                                           echo "</tr>";
                                           }
                                         echo "</table>"
@@ -109,7 +124,6 @@ require_once 'header.php';
       </div>
     </div>
   </div>
-
 <?php
 require_once 'footer.php';
 ?>
