@@ -41,5 +41,6 @@ switch ($help) {
     break;
 }
 
-header($ruta);             
+header($ruta);
+             
 ?>

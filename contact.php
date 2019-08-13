@@ -105,8 +105,9 @@
 					<!-- contact form -->
 					<div class="col-md-6">
 						<div class="contact-form">
-							<h4>Envía un mensaje.</h4>
-							<form>
+							<h4>Envianos un mensaje.</h4>
+
+							<form method="post" action="Private/modelos/EnvioMensaje.php">
 								<input class="input" type="text" name="name" placeholder="Nombre">
 								<input class="input" type="email" name="email" placeholder="Email">
 								<input class="input" type="text" name="subject" placeholder="Tema">
