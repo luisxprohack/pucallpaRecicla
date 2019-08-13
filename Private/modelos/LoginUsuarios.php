@@ -47,7 +47,7 @@ while ($fila=$resultado->fetch_array(MYSQLI_ASSOC)){
 				$_SESSION['Uapellidos']=$fila['apellidos'];
 				$_SESSION['Upuntaje']=$fila['puntaje'];
 				$_SESSION['start']=time();
-				$_SESSION['expire']=$_SESSION['start']+(10*60);
+				$_SESSION['expire']=$_SESSION['start']+(10000*60);
 			$bandera=4;
 		}
 	}else{
